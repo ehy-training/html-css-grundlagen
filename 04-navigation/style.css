@@ -1,0 +1,22 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background: hsl(200, 42%, 42%);
+            color: #fff;
+            height: 200px;
+        }
+
+        main {
+            background: hsl(200, 42%, 97%);
+            min-height: 50vh;
+        }
+
+        footer {
+            height: 200px;
+            color: #fff;
+            background: hsl(200, 42%, 13%);
+        }
