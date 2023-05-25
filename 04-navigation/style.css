@@ -17,6 +17,11 @@
 
         footer {
             height: 200px;
-            color: #fff;
             background: hsl(200, 42%, 13%);
         }
+footer,
+footer a {
+              color: #fff;  
+}
+
+
