@@ -12,7 +12,7 @@
 
         main {
             background: hsl(200, 42%, 97%);
-            min-height: 50vh;
+            min-height: 150vh;
         }
 
         footer {
@@ -22,6 +22,34 @@
 footer,
 footer a {
               color: #fff;  
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav li {
+    margin-right: 1em;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav.main-nav {
+    background: hsl(30,97%,55%);
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+nav.main-nav a {
+    color: #000;
+}
+
+header {
+    padding-top: 50px;
 }
 
 
