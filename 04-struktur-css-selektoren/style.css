@@ -1,15 +1,61 @@
-        footer {
+/* 
+RESET
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 
+LAYOUT
+*/
+
+h1,h2,h3,h4,h5,h6,p,ul,ol {
+    margin-bottom: 1em;
+}
+
+header > *,
+nav > *,
+section > *,
+aside > *,
+footer > * {
+    padding: 0 20px;
+}
+
+
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-right: 1em;
+}
+
+
+footer {
             color: white;
             background: darkblue;
             height: 300px;
         }
 
 
-        h1.second-level {
+        body.second-level h1 {
             font-size: 21px;
         }
 
 
-        aside.second-level {
+        body.second-level aside {
             background: darkgreen;
 }
