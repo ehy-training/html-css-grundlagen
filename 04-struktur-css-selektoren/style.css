@@ -1,0 +1,15 @@
+        footer {
+            color: white;
+            background: darkblue;
+            height: 300px;
+        }
+
+
+        h1.second-level {
+            font-size: 21px;
+        }
+
+
+        aside.second-level {
+            background: darkgreen;
+}
