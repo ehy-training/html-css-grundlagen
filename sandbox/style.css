@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 24px;
+}
+
+.header-wrapper,
+header {
+    background: green;
+    color: white;
+    padding: 10px;
+    padding-left: 100px;
+}
+
+.header-wrapper {
+    padding: 0;
+}
+
+header a {
+    color: #fff;
+}
+
+article {
+    margin-bottom: 5em;
+    border-bottom: 1px solid #000;
+}
+
+.article-01 {
+    border-bottom: 10px solid #000;
+}
