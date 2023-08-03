@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!--Ein HTML Dokument um die Grundlagen von CSS zu üben-->
     <title>CSS Basics</title>
-    
+
     <style>
-    
+        
+        /*Lokales Stylesheet für dieses HTML Dokument*/
         
         section {
-            background-color: rgb(255,128,0);
+            /*background-color: rgb(255, 128, 128);*/
+            background-color: hsl(200,20%,40%);
         }
-    
-    
+        
+        .my-content {
+            background-color: hsl(200,20%,70%);
+        }
+        
+        
+        
     </style>
-    
-    
+
+
 </head>
 
 <body>
@@ -30,25 +38,25 @@
 
     </nav>
 
-    <section id="section-01" style="color:white;height:900px">
-        
+    <section id="section-01" style="color:white;">
+
         <h2>Abschnitt 1</h2>
         <p><a href="#" style="color:white">Nach oben …</a></p>
 
     </section>
 
-    <section id="section-02" style="color:white;height:900px">
-        
+    <section id="section-02" class="my-content" style="color:white;">
+
         <h2>Abschnitt 2</h2>
         <p><a href="#" style="color:white">Nach oben …</a></p>
 
     </section>
 
-    <section id="section-03" style="color:white;height:900px">
-        
+    <section id="section-03" class="my-content" style="color:white;">
+
         <h2>Abschnitt 3</h2>
         <p><a href="#" style="color:white">Nach oben …</a></p>
-        
+
     </section>
 
 </body></html>
