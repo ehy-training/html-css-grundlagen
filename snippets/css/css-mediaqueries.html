@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Layout mit Mediaqueries</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .tablet,
+        .desktop {
+            display: none;
+        }
+
+        header {
+            padding: 2rem;
+        }
+
+        h1 {
+            margin-bottom: 1em;
+        }
+
+        .flexbox {
+            display: flex;
+            flex-wrap: wrap;
+            grid-gap: 10px;
+        }
+
+        section {
+            background: #000;
+            height: 30vw;
+            width: 100%;
+        }
+
+        @media screen and (min-width: 600px) {
+
+            .mobile {
+                display: none;
+            }
+
+            .tablet {
+                display: block;
+            }
+
+            section {
+                width: calc((100% - 10px) / 2);
+            }
+
+        }
+
+        @media screen and (min-width: 960px) {
+
+            .tablet {
+                display: none;
+            }
+
+            .desktop {
+                display: block;
+            }
+
+            section {
+                width: calc((100% - 20px) / 3);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Responsive Layout mit Mediaqueries</h1>
+
+        <p class="mobile">Mobil Layout (einspaltig), unter 600px Breite</p>
+
+        <p class="tablet">Tablet Layout (zweispaltig), zwischen 600px und 960px Breite</p>
+
+        <p class="desktop">Desktop/Laptop Layout (dreispaltig), über 960px Breite</p>
+    </header>
+
+    <div class="flexbox">
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+    </div>
+
+
+</body></html>
