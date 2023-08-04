@@ -4,34 +4,56 @@
     <title>CSS Layout Basics</title>
 
     <style>
+        body {
+            background: hsl(200, 30%, 10%);
+        }
 
+        header {
+            background: hsl(200, 30%, 90%);
+        }
 
+        main {
+            background: #fff;
+        }
+
+        section {
+            background: hsl(200, 30%, 50%);
+            min-height: 30vw;
+        }
+
+        aside {
+            background: hsl(200, 30%, 70%);
+        }
+
+        footer {}
     </style>
 </head>
 
 <body>
 
-    <header>
-        <h1>CSS Layout Basics</h1>
-    </header>
+    <div class="wrapper top-wrapper">
+        <header>
+            <h1>CSS Layout Basics</h1>
+        </header>
 
-    <main>
-        <h2>Main</h2>
-        <section>
-            <h3>Abschnitt 1</h3>
-        </section>
-        <section>
-            <h3>Abschnitt 2</h3>
-        </section>
-        <section>
-            <h3>Abschnitt 3</h3>
-        </section>
-    </main>
+        <main>
+            <h2>Main</h2>
+            <section>
+                <h3>Abschnitt 1</h3>
+            </section>
+            <section>
+                <h3>Abschnitt 2</h3>
+            </section>
+            <section>
+                <h3>Abschnitt 3</h3>
+            </section>
+        </main>
 
-    <aside>
-        <h2>Aside</h2>
-    </aside>
-
+        <aside>
+            <h2>Aside</h2>
+        </aside>
+    </div><!--end top-wrapper-->
+    
     <footer>
         <h2>Footer</h2>
     </footer>
