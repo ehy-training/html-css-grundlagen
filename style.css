@@ -1,0 +1,14 @@
+/*
+Hauptstylesheet für die Übung HTML/CSS Grundlagen (und Snippets)
+Version: 1.0
+*/
+
+
+body {
+    background: hsl(200, 20%, 30%);
+    color: hsl(200, 20%, 90%);
+}
+
+body.sub-topic {
+        background: hsl(200, 20%, 50%);
+}
