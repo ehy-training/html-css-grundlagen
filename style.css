@@ -1,6 +1,6 @@
 /*
 Hauptstylesheet für die Übung HTML/CSS Grundlagen (und Snippets)
-Version: 1.0
+Version: 1.1
 */
 
 /*RESET*/
@@ -18,9 +18,6 @@ img {
 
 /*LAYOUT*/
 
-h1 {
-    padding: 1em;
-}
 
 .gallery {
     display: flex;
