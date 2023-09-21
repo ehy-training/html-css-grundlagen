@@ -3,6 +3,34 @@ Hauptstylesheet für die Übung HTML/CSS Grundlagen (und Snippets)
 Version: 1.0
 */
 
+/*RESET*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+img {
+    width: 100%;
+}
+
+/*LAYOUT*/
+
+h1 {
+    padding: 1em;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery figure {
+width: 20%;
+}
+
 
 body {
     background: hsl(200, 20%, 30%);
