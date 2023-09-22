@@ -1,6 +1,6 @@
 /*
 Hauptstylesheet für die Übung HTML/CSS Grundlagen (und Snippets)
-Version: 1.1
+Version: 1.2
 */
 
 /*RESET*/
@@ -13,10 +13,17 @@ Version: 1.1
 
 
 img {
+    display: block;
     width: 100%;
 }
 
 /*LAYOUT*/
+
+.container {
+    margin: 0 auto;
+    padding: 2rem 20px;
+    max-width: 800px;
+}
 
 
 .gallery {
@@ -25,10 +32,14 @@ img {
 }
 
 .gallery figure {
-width: 20%;
-    padding: 0.5em;
+    width: 33.33%;
+/*    padding: 0.5em;*/
 }
 
+/*NAVIGATION*/
+
+
+/*COLOR*/
 
 body {
     background: hsl(200, 20%, 30%);
@@ -38,3 +49,4 @@ body {
 body.sub-topic {
         background: hsl(200, 20%, 50%);
 }
+

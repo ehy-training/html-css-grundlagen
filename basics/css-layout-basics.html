@@ -1,4 +1,4 @@
-<!--Version: 1.1-->
+<!--Version: 1.2-->
 <!DOCTYPE html>
 <html>
     <head>
@@ -6,19 +6,47 @@
     <link rel="stylesheet" href="../style.css">
 
     <style>
+        
+        
 /*
+        #main-container {
+            max-width: 200px;
+        }
+        
+        ID Selektoren besser nicht verwenden in euren Stylesheets, da sie durch ihre höhere Wertigkeit u.U. anderen CSS Code, auch wenn dieser weietr unten steht, blockieren könnten.
+
+        
+    
+
         .container {
             max-width: 800px;
-            margin: 0 auto;
         }
-*/
         
-        header div,
-        main div,
-        footer div {
-                      max-width: 800px;
-            margin: 0 auto;  
+        
+        .main-container {
+            max-width: 700px;
         }
+
+        Statt ID Selektoren besser spezifische Klassen anlegen, die sich dann, ähnlich einer ID, nur auf ein einziges ELement beziehen (also als Klasse in gewisser Weise widersinng) und diese einsetzen. Dann gibt es keine unerwünschten Effekte/Konflikte aufgrund der Wertigkeit.
+
+
+
+            header > div,
+            main > div,
+            footer > div {
+                max-width: 200px; 
+            }
+        */
+
+
+        /*
+        .gallery img {
+            height: 40%; 
+            object-fit: cover;
+            object-position: top;
+        }
+        */
+        
     </style>
 
 </head>
@@ -26,42 +54,42 @@
 <body class="sub-topic topic-basics">
 
     <header>
-        <div class="container">
+        <div id="header-container" class="container header-container">
             <h1>CSS Layout Basics</h1>
         </div>
     </header>
 
     <main>
-        <div class="container">
+        <div id="main-container" class="container main-container">
 
             <section>
-                
+
                 <h2>Bildleiste</h2>
-                
-<div class="gallery">
 
-        <figure>
-            <img src="../assets/img/stained-glass-1589648_1920.jpeg">
-        </figure>
+                <div class="gallery">
 
-        <figure>
-            <img src="../assets/img/architecture-6517841_1920.jpeg">
-        </figure>
+                    <figure>
+                        <img src="../assets/img/stained-glass-1589648_1920.jpeg">
+                    </figure>
 
-        <figure>
-            <img src="../assets/img/colors-2004497_1920.jpeg">
-        </figure>
-        
-                <figure>
-            <img src="../assets/img/architecture-21665_1920.jpeg">
-        </figure>
-        
-                        <figure>
-            <img src="../assets/img/architecture-1850055_1920.jpeg">
-        </figure>
+                    <figure>
+                        <img src="../assets/img/architecture-6517841_1920.jpeg">
+                    </figure>
+
+                    <figure>
+                        <img src="../assets/img/colors-2004497_1920.jpeg">
+                    </figure>
+
+                    <figure>
+                        <img src="../assets/img/architecture-21665_1920.jpeg">
+                    </figure>
+
+                    <figure>
+                        <img src="../assets/img/architecture-1850055_1920.jpeg">
+                    </figure>
 
 
-    </div>
+                </div>
 
 
 
@@ -69,9 +97,9 @@
 
 
             <section>
-                
+
                 <h2>Textbereich</h2>
-                
+
                 <p>
                     Dies ist ein Typoblindtext. An ihm kann man sehen, ob alle Buchstaben da sind und wie sie aussehen. Manchmal benutzt man Worte wie Hamburgefonts, Rafgenduks oder Handgloves, um Schriften zu testen. Manchmal Sätze, die alle Buchstaben des Alphabets enthalten - man nennt diese Sätze »Pangrams«.
                 </p>
@@ -86,9 +114,9 @@
     </main>
 
     <footer>
-        <div class="container">
+        <div id="footer-container" class="container footer-container">
             <p>© 2023 Enno Hyttrek</p>
-            <p>Version: 1.1</p>
+            <p>Version: 1.2</p>
         </div>
     </footer>
 

@@ -3,4 +3,4 @@ Einführung in die Grundlagen von HTML und CSS. Repository um Code Beispiele, di
 
 Dieses Repository enthält also keinen umfassenden oder gar kompletten Kurs zum Thema HTML, sondern nur Code Beispiele, die im Kontext der Einführung in HTML und CSS wichtig sind, sowie Assets.
 
-Version: 1.1
+Version: 1.2
