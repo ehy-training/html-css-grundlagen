@@ -19,7 +19,7 @@
     <nav class="main-nav">
         <ul>
             <li><a href="../index.html">Startseite</a></li>
-            <li><a href="../html-basics/start.html">HTML Basics</a></li>
+            <li><a href="../html-basics/index.html">HTML Basics</a></li>
             <li>CSS Basics</li>
         </ul>
     </nav>
