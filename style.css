@@ -53,7 +53,6 @@ main {
 
 ul.content-list {
     padding: 1em;
-    width: 34em
 }
 
 ul.content-list ul > li {
@@ -170,6 +169,10 @@ nav.sitemap > ul > li {
     nav.sitemap > ul > li {
         width: 47%;
     }
+
+    ul.content-list {
+    width: 34em
+}
 
     
 }
