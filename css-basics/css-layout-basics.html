@@ -1,15 +1,13 @@
-<!--Version: 1.5-->
+<!--Version: 1.5.1-->
 <!DOCTYPE html>
 <html>
     <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-    <title>CSS Layout Basics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML/CSS Grundlagen | CSS Layout Basics</title>
     <link rel="stylesheet" href="../style.css">
 
     <style>
-        
-        
-/*
+        /*
         #main-container {
             max-width: 200px;
         }
@@ -38,31 +36,43 @@
                 max-width: 200px; 
             }
         */
-
-
-        
-        
     </style>
 
 </head>
 
 <body class="sub-topic topic-basics">
 
-    <header>
-        <div id="header-container" class="container header-container">
-            <h1>CSS Layout Basics</h1>
+    <header class="main-header full-header">
+        <div class="container">
+            <div class="site-id">
+                <p>HTML/CSS Grundlagen</p>
+                <p>Enno Hyttrek</p>
+            </div>
+            <h1 class="page-title">CSS Layout Basics</h1>
         </div>
     </header>
-    
-        <nav class="main-nav">
+
+    <nav class="main-nav">
         <ul>
             <li><a href="../index.html">Startseite</a></li>
             <li><a href="../html-basics/index.html">HTML Basics</a></li>
             <li>CSS Basics</li>
+            <li><a href="../sitemap.html">Sitemap</a></li>
         </ul>
     </nav>
 
     <main>
+        
+        <nav class="breadcrumbs">
+            <p>
+                <span><a href="../index.html">Startseite</a></span>
+                >
+                <span><a href="index.html">CSS Basics</a></span>
+                >
+                <span>CSS Layout Basics</span>
+            </p>
+        </nav>
+        
         <div id="main-container" class="container main-container">
 
             <section>
@@ -119,7 +129,7 @@
     <footer>
         <div id="footer-container" class="container footer-container">
             <p>© 2023 Enno Hyttrek</p>
-            <p>Version: 1.5</p>
+            <p>Version: 1.5.1</p>
         </div>
     </footer>
 

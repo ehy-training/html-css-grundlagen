@@ -1,6 +1,6 @@
 /*
 Hauptstylesheet für die Übung HTML/CSS Grundlagen (und Snippets)
-Version: 1.5
+Version: 1.5.1
 */
 
 /*RESET*/
@@ -29,6 +29,7 @@ p {
     margin-bottom: 1em;
 }
 
+nav.breadcrumbs > p,
 nav.main-nav > ul,
 .container {
     margin: 0 auto;
@@ -41,18 +42,34 @@ nav.main-nav > ul {
     padding-bottom: 0.3em;
 }
 
+header.main-header {
+    min-height: 20vw;
+}
+
 main {
     min-height: 70vh;
 }
 
 
+ul.content-list {
+    padding: 1em;
+    width: 34em
+}
+
+ul.content-list ul > li {
+    margin-bottom: 1em;
+}
+
 
 
 /*NAVIGATION*/
 
+nav ul {
+    list-style-type: none;
+}
+
 nav.main-nav > ul {
     display: flex;
-    list-style-type: none;
     grid-gap: 1em;
 }
 
@@ -61,7 +78,28 @@ nav.main-nav > ul a {
 }
 
 
-/*COLOR*/
+
+nav.sitemap > ul > li {
+    padding: 0.3em;
+    margin: 0 1em 1em 0;
+}
+
+nav.sitemap > ul > li > ul > li {
+    padding: 0.5em 0 0
+}
+
+/*TYPOGRAPHY*/
+
+nav.sitemap ul li ul,
+nav.breadcrumbs {
+    font-size: 0.8em;
+}
+
+
+
+
+
+/*COLOR & STYLE*/
 
 body {
     background: hsl(200, 20%, 10%);
@@ -97,7 +135,9 @@ main {
     color: hsl(200, 20%, 30%);
 }
 
-footer {}
+nav.sitemap > ul > li {
+    background: hsl(200, 20%, 90%) 
+}
 
 
 /*RESPONSIVE (Mobile First)*/
@@ -121,8 +161,17 @@ footer {}
         object-fit: cover;
         object-position: top;
     }
+    
+        nav.sitemap > ul {
+        display: flex;
+            flex-wrap: wrap;
+    }
+    
+    nav.sitemap > ul > li {
+        width: 47%;
+    }
 
-
+    
 }
 
 
@@ -131,6 +180,12 @@ footer {}
     .gallery figure {
         width: 33.33%;
     }
+    
+        nav.sitemap > ul > li {
+        width: 30%;
+    }
+    
+
 
 }
 
@@ -139,6 +194,10 @@ footer {}
 
     .gallery figure {
         width: 20%;
+    }
+    
+            nav.sitemap > ul > li {
+        width: 22%;
     }
 
 }
