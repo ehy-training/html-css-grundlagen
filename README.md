@@ -10,4 +10,4 @@ https://ehy-training.github.io/html-css-grundlagen/index.html
 Enno Hyttrek,
 Oktober 2023
 
-Version: 1.6.2
+Version: 1.6.3
