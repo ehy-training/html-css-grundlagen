@@ -1,9 +1,11 @@
 /*
-Hauptstylesheet für die Übung HTML/CSS Grundlagen (und Snippets)
-Version: 1.5.1
+Hauptstylesheet für die Übung HTML/CSS Grundlagen
+Version: 1.6.0
 */
 
-/*RESET*/
+/*---------------------
+RESET
+---------------------*/
 
 * {
     margin: 0;
@@ -17,7 +19,9 @@ img {
     width: 100%;
 }
 
-/*LAYOUT*/
+/*---------------------
+LAYOUT
+---------------------*/
 
 h1,
 h2,
@@ -55,13 +59,15 @@ ul.content-list {
     padding: 1em;
 }
 
-ul.content-list ul > li {
+ul.content-list > li {
     margin-bottom: 1em;
 }
 
 
 
-/*NAVIGATION*/
+/*---------------------
+NAVIGATION
+---------------------*/
 
 nav ul {
     list-style-type: none;
@@ -87,7 +93,16 @@ nav.sitemap > ul > li > ul > li {
     padding: 0.5em 0 0
 }
 
-/*TYPOGRAPHY*/
+/*---------------------
+TYPOGRAPHY
+---------------------*/
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+}
 
 nav.sitemap ul li ul,
 nav.breadcrumbs {
@@ -98,7 +113,9 @@ nav.breadcrumbs {
 
 
 
-/*COLOR & STYLE*/
+/*---------------------
+COLOR & STYLE
+---------------------*/
 
 body {
     background: hsl(200, 20%, 10%);
@@ -117,6 +134,9 @@ nav.main-nav a {
     color: #fff;
 }
 
+
+main a:hover,
+main a:active,
 nav.main-nav,
 nav.main-nav a:hover {
         color: rgb(255,128,0);
@@ -131,6 +151,11 @@ body.sub-topic header {
 
 main {
     background: #fff;
+
+}
+
+main,
+main a {
     color: hsl(200, 20%, 30%);
 }
 
@@ -138,9 +163,17 @@ nav.sitemap > ul > li {
     background: hsl(200, 20%, 90%) 
 }
 
+hr {
+    border-width:0;
+    height: 1px;
+    background: hsl(200, 20%, 90%);
+    margin-bottom: 1rem;
+}
 
-/*RESPONSIVE (Mobile First)*/
 
+/*---------------------
+RESPONSIVE (Mobile First)
+---------------------*/
 
 @media screen and (min-width: 600px) {
 
